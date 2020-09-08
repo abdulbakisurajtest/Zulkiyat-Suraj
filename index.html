@@ -2,61 +2,135 @@
 <html lang="en">
 <head>
 	<meta charset="utf8">
-	<title>Stealth By Zulkie</title>
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<title>Zulkiyat Suraj</title>
 	<style>
+		*{
+			border: none;
+			padding: 0px;
+			box-sizing: border-box;
+		}
 		body{
-			background-color: white;
+			font-family: helvetica;
+			font-size: 20px;
+			background: #fff;
+			margin: 0px;
 		}
-		.header{
-			overflow: hidden;
-			background-color: black;
-			margin: 0;
-			border: none;
-			font-size: 16px;
+		header{
+			display: flex;
+			width: 100%;
+			bottom: 10px;
+			align-items: center;
+			box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.28);
+			background: #fff;
+			margin-bottom: 10px;
 		}
-		.header a{
-			color: white;
+		header li, header a{
+			list-style: none;
 			text-decoration: none;
-
+			color: black;
 		}
-		#headerleft{
-			float: left;
-			padding: 0.5em;
+		.name-container{
+			flex: 1;
 		}
-		#headerright{
-			float: right;
-			padding: 0.5em;
+		.name{
+			padding-left: 10px;
 		}
-		.profile-display{
-			background-color: #ffefef;
-			margin-top: -10px;
-			border: none;
+		nav{
+			flex: 1;
 		}
-		.footer{
+		.nav-links{
+			display: flex;
+			justify-content: space-around;
+		}
+		main{
+			display: flex;
+			height: 500px;
+			align-items: center;
+		}
+		.profile-container{
+			flex: 1;
+		}
+		.image-container{
+			flex: 1;
+		}
+		.profile-text{
 			text-align: center;
-			background-color: black;
+			padding: 20px;
+		}
+		#buttonlink{
+			text-align: center;
+		}
+		#buttonlink input{
+			background-color: white;
+			font-size: 18px;
+			padding: 8px 10px 8px 10px;
+			border: 1px solid #333;
+			border-radius: 10px;
+		}
+		#buttonlink input:hover{
+			cursor: pointer;
+			background-color: #444;
 			color: white;
+		}
+		.image-content{
+			width: 50%;
+			margin: auto;
+		}
+		.image-content img{
+			width: 250px;
+		}
+		@media screen and (max-width: 600px) {
+			main{
+				display: block;
+			}
+			.image-container{
+				position: absolute;
+				bottom: 100px;
+				left: 20px;
+				z-index: -1;
+				opacity: 0.5;
+			}
+			.profile-container{
+				position: relative;
+				top: 100px;
+			}
+			.profile-container p{
+				margin: 25px;
+			}
+
 		}
 	</style>
 </head>
 <body>
-	<div class="header">
-		<h1><a id="headerleft" href="index.html">Home</a><a id="headerright" href="#contact">Contact me</a></h1>
-	</div>
-	<div class="profile-display">
-		<p>Hi, welcome to Stealth By Zulkie, home of handcrafted footwears tailor-made to suit any feet-size regardless gender and age.</p>
-		<p>We specialize in creating unique and beautifully designed footwears ranging from palm sandals to a variety of shoes, casual and office-types alike.</p>
-	</div>
-	<div class="gallery">
-	</div>
-	<div class="footer" id="contact">
-		<p>(c) 2020 stealthbyzulkie</p>
-		<p>
-			<a href="https://www.facebook.com"><img src="facebook.png" alt="facebook profile"></a>
-			<a href="https://www.instagram.com"><img src="instagram.png" alt="instagram profile"></a>
-			<a href="https://www.gmail.com"><img src="gmail.png" alt="gmail"></a>
-			<a href="https://www.whatsapp.com"><img src="whatsapp.png" alt="whatsapp"></a>
-		</p>
-	</div>
+	<header>
+		<div class="name-container">
+			<h3 class="name">Zulkiyat Suraj</h3>
+		</div>
+		<nav>
+			<ul class="nav-links">
+				<li class="nav-link" ><a href="#about">About</a></li>
+				<li class="nav-link"><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="profile-container">
+			<div class="profile-text">
+				<h3>Zulkiyat Suraj Shoes</h3>
+				<p>They are made from the finest material, superior leather quality</p>
+			</div>
+			<div id="buttonlink">
+				<form action="#gallery">
+					<input type="submit" value="Gallery">
+				</form>
+			</div>
+		</div>
+		<div class="image-container">
+			<div class="image-content">
+				<img src="pic2.png" alt="picture of a shoe">
+			</div>
+		</div>
+	</main>
 </body>
 </html>
