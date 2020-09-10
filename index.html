@@ -31,7 +31,7 @@
 			color: black;
 		}
 		.name-container{
-			flex: 1;
+			flex: 2;
 		}
 		.name{
 			padding-left: 10px;
@@ -80,6 +80,41 @@
 		.image-content img{
 			width: 250px;
 		}
+		.bottomtab{
+			margin: 50px 0px 20px 0px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		#homelink{
+			text-align: center;
+			flex: 1;
+			margin: 20px 0px 50px 0px;
+		}
+		.socials{
+			flex: 1;
+			margin-left: 50px;
+			margin-right: 50px;
+			text-align: center;
+		}
+		.social-item{
+			display: inline-flex;
+			padding-bottom: 10px;
+		}
+		.footer-note{
+			flex: 1;
+		}
+		footer img{
+			width: 20px;
+			margin: 0px 5px 0px 5px;
+		}
+		footer li, footer a{
+			list-style: none;
+			text-decoration: none;
+		}
+		footer, footer a{
+			color: #444;
+		}
 		@media screen and (max-width: 700px) {
 			main{
 				display: block;
@@ -87,7 +122,9 @@
 			.image-container{
 				position: absolute;
 				bottom: 100px;
-				left: 20px;
+				left: 10%;
+				right: 25%;
+				margin: auto;
 				z-index: -1;
 				opacity: 0.5;
 			}
@@ -98,12 +135,11 @@
 			.profile-container p{
 				margin: 25px;
 			}
-
 		}
 	</style>
 </head>
 <body>
-	<header>
+	<header id="home">
 		<div class="name-container">
 			<h3 class="name">Zulkiyat Suraj</h3>
 		</div>
@@ -132,5 +168,23 @@
 			</div>
 		</div>
 	</main>
+	<footer>
+		<div class="bottomtab">
+			<div id="homelink">
+				<a href="#home">Back to top</a>
+			</div>
+			<div class="socials" id="contact">
+				<ul>
+					<li class="social-item"><img src="facebook.png"><a href="https://www.facebook.com"> Facebook</a></li>
+					<li class="social-item"><img src="instagram.png"><a href="https://www.instagram.com/z.o.s.a"> Instagram</a></li>
+					<li class="social-item"><img src="whatsapp.png"><a href="https://www.wa.me/08085828740"> Whatsapp</a></li>
+					<li class="social-item"><img src="gmail.png"><a href="https://www.gmail.com"> Email</a></li>
+				</ul>
+			</div>
+			<div class="footer-note">
+				<p>(c) 2020 Zulkiyat Suraj Shoes</p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
