@@ -1,13 +1,31 @@
 {
-	"name": "Zulkiyat Suraj",
-	"short_name": "z.o.s.a_",
-	"description": "An online portfolio for Zulkiyat Suraj and Zulkiyat Suraj Shoes.",
-	"start_url": "/?homescreen=1",
-	"background_color": "#ffffff",
-	"theme_color": "fecdcd",
-	"icons": [{
-		"src": "facebook.png",
-		"sizes" : "256x256",
-		"type": "image/png"
-	}]
+    "name": "Weather",
+    "short_name": "weather",
+    "start_url": "/index.html",
+    "theme_color": "#2196f3",
+    "description":"Weather forecast information",
+    "background_color": "#2196f3",
+    "display": "standalone",
+ "orientation": "portrait-primary",
+    "icons":  [
+ {
+        "src": "/mine/elizabeth/cloudy.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+      "src": "/storm.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+    "src": "/images/rain.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+  {
+"scope": "/" 
+  }
+]
 }
+  
