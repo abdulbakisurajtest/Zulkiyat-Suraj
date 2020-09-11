@@ -1,7 +1,7 @@
 {
     "name": "Weather",
     "short_name": "weather",
-    "start_url": "/index.html",
+    "start_url": "index.html",
     "theme_color": "#2196f3",
     "description":"Weather forecast information",
     "background_color": "#2196f3",
@@ -9,17 +9,17 @@
  "orientation": "portrait-primary",
     "icons":  [
  {
-        "src": "/cloudy.png",
+        "src": "cloudy.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-      "src": "/storm.png",
+      "src": "storm.png",
       "type": "image/png",
       "sizes": "72x72"
     },
     {
-    "src": "/images/rain.png",
+    "src": "rain.png",
       "type": "image/png",
       "sizes": "192x192"
     },
