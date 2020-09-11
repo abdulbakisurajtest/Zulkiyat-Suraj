@@ -9,7 +9,7 @@
  "orientation": "portrait-primary",
     "icons":  [
  {
-        "src": "/mine/elizabeth/cloudy.png",
+        "src": "cloudy.png",
         "type": "image/png",
         "sizes": "192x192"
       },
