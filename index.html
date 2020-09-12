@@ -1,31 +1,188 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome to the Weather App</title>
-        <link rel="stylesheet" href="main.css">
-        <link rel="manifest" href="manifest.json">
-        <!....ios support>
-        <link rel="apple-touch-icon" href="/icons/icon-72x72.png">
-        <meta name="apple-mobile-web-app-statusbar" content="#aa7700">
-     </head>
-    <body>
-        <div class="app-wrap">
-            <header>
-                <input type="text" autocomplete="off" class="search-box" placeholder="Search for a City...."/>
-               </header>
-            <main>
-                <section class="location">
-                <div class="city">NewYork,USA</div>
-                <div class="date">Wednesday 2 September 2020</div>
-            </section>
-            <div class="current">
-            <div class="temp">20<span>° c</span></div>
-            <div class="weather">Humid</div>
-            <div class="hi-high">18°c/16°c</div>
-            </main>
-        </div>
-<script src="main.js"></script>
-    </body>
+<html lang="en">
+<head>
+	<meta charset="utf8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<link rel="manifest" href="manifest.json">
+	<title>Zulkiyat Suraj</title>
+	<style>
+		*{
+			border: none;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		body{
+			font-family: helvetica;
+			font-size: 20px;
+			background: #fff;
+			margin: 0px;
+		}
+		header{
+			display: flex;
+			width: 100%;
+			bottom: 10px;
+			align-items: center;
+			box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.28);
+			background: #fff;
+			margin-bottom: 10px;
+		}
+		header li, header a{
+			list-style: none;
+			text-decoration: none;
+			color: black;
+		}
+		.name-container{
+			flex: 1;
+		}
+		.name{
+			padding-left: 10px;
+		}
+		nav{
+			flex: 1;
+		}
+		.nav-links{
+			display: flex;
+			justify-content: space-around;
+		}
+		main{
+			display: flex;
+			height: 500px;
+			align-items: center;
+		}
+		.profile-container{
+			flex: 1;
+		}
+		.image-container{
+			flex: 1;
+		}
+		.profile-text{
+			text-align: center;
+			padding: 20px;
+		}
+		#buttonlink{
+			text-align: center;
+		}
+		#buttonlink input{
+			background-color: white;
+			font-size: 18px;
+			padding: 8px 10px 8px 10px;
+			border: 1px solid #333;
+			border-radius: 10px;
+		}
+		#buttonlink input:hover{
+			cursor: pointer;
+			background-color: #444;
+			color: white;
+		}
+		.image-content{
+			width: 50%;
+			margin: auto;
+		}
+		.image-content img{
+			width: 250px;
+		}
+		.bottomtab{
+			margin: 50px 0px 20px 0px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		#homelink{
+			text-align: center;
+			flex: 1;
+			margin: 20px 0px 50px 0px;
+		}
+		.socials{
+			flex: 1;
+			text-align: center;
+		}
+		.social-item{
+			display: inline-flex;
+			padding-bottom: 10px;
+		}
+		.footer-note{
+			flex: 1;
+		}
+		footer img{
+			width: 20px;
+			margin: 0px 5px 0px 5px;
+		}
+		footer li, footer a{
+			list-style: none;
+			text-decoration: none;
+		}
+		footer, footer a{
+			color: #444;
+		}
+		@media screen and (max-width: 700px) {
+			main{
+				display: block;
+			}
+			.image-container{
+				position: absolute;
+				bottom: 100px;
+				left: 7.5%;
+				right: 25%;
+				margin: auto;
+				z-index: -1;
+				opacity: 0.5;
+			}
+			.profile-container{
+				position: relative;
+				top: 100px;
+			}
+			.profile-container p{
+				margin: 25px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header id="home">
+		<div class="name-container">
+			<h3 class="name">Zulkiyat Suraj</h3>
+		</div>
+		<nav>
+			<ul class="nav-links">
+				<li class="nav-link" ><a href="#about">About</a></li>
+				<li class="nav-link"><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="profile-container">
+			<div class="profile-text">
+				<h3>Zulkiyat Suraj Shoes</h3>
+				<p>They are made from the finest material, superior leather quality</p>
+			</div>
+			<div id="buttonlink">
+				<form action="#gallery">
+					<input type="submit" value="Gallery">
+				</form>
+			</div>
+		</div>
+		<div class="image-container">
+			<div class="image-content">
+				<img src="pic2.png" alt="picture of a shoe">
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="bottomtab">
+			<div id="homelink">
+				<a href="#home">Back to top</a>
+			</div>
+			<div class="socials" id="contact">
+				<ul>
+					<li class="social-item"><img src="facebook.png"><a href="https://www.instagram.com/z.o.s.a_"> Instagram</a></li>
+					<li class="social-item"><img src="whatsapp.png"><a href="https://api.whatsapp.com/send?phone=+2348085828740"> Whatsapp</a></li>
+					<li class="social-item"><img src="gmail.png"><a href="https://www.gmail.com"> Email</a></li>
+				</ul>
+			</div>
+			<div class="footer-note">
+				<p>(c) 2020 Zulkiyat Suraj Shoes</p>
+			</div>
+		</div>
+	</footer>
+</body>
 </html>

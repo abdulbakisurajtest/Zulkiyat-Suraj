@@ -1,31 +1,14 @@
 {
-    "name": "Weather",
-    "short_name": "weather",
-    "start_url": "index.html",
-    "theme_color": "#2196f3",
-    "description":"Weather forecast information",
-    "background_color": "#2196f3",
-    "display": "standalone",
- "orientation": "portrait-primary",
-    "icons":  [
- {
-        "src": "cloudy.png",
-        "type": "image/png",
-        "sizes": "192x192"
-      },
-      {
-      "src": "storm.png",
-      "type": "image/png",
-      "sizes": "72x72"
-    },
-    {
-    "src": "rain.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-  {
-"scope": "/" 
-  }
-]
+	"name": "Zulkiyat Suraj",
+	"short_name": "z.o.s.a_",
+	"description": "An online portfolio for Zulkiyat Suraj and Zulkiyat Suraj Shoes.",
+	"start_url": "/index.html",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#ff00ff",
+	"icons": [{
+		"src": "facebook.png",
+		"sizes" : "16x16",
+		"type": "image/png"
+	}]
 }
-  
